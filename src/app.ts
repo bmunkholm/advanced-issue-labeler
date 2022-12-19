@@ -50,6 +50,7 @@ const app = (probot: Probot) => {
       // Check if there are some labels to be set
       if (!labels || (Array.isArray(labels) && labels?.length < 1)) {
         debug('Nothing to do here. CY@');
+        debug(`labels: ${labels}`)
         return;
       }
 
